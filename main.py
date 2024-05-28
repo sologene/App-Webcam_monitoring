@@ -14,6 +14,9 @@ status_list = []
 count = 1
 
 
+if not os.path.exists("img"):
+    os.makedirs("img")
+
 def clean_folder():
     print('Started')
     images = glob.glob("img/*.png")
